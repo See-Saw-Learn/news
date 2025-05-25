@@ -32,7 +32,10 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = [".herokuapp.com", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = [".herokuapp.com", "localhost", "127.0.0.1",
+                 "https://whispering-headland-81352-d307253ad389.herokuapp"
+                 ".com/", ".samspaper.site,samspaper.herokuapp.com",
+                 "www.samspaper.site", "www.samspaper.info"]
 
 
 # Application definition
@@ -150,4 +153,7 @@ LOGOUT_REDIRECT_URL = "home"
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-CSRF_TRUSTED_ORIGINS = ["https://*.herokuapp.com"]
+CSRF_TRUSTED_ORIGINS = ["https://*.herokuapp.com",
+                        "https://whispering-headland-81352-d307253ad389.herokuapp.com/",
+                        ".samspaper.site", "samspaper.herokuapp.com",
+                        "www.samspaper.site", "www.samspaper.info"]
