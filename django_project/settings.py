@@ -35,7 +35,7 @@ DEBUG = env.bool("DEBUG", default=False)
 ALLOWED_HOSTS = [".herokuapp.com", "localhost", "127.0.0.1",
                  "https://whispering-headland-81352-d307253ad389.herokuapp"
                  ".com/", ".samspaper.site,samspaper.herokuapp.com",
-                 "www.samspaper.site", "www.samspaper.info"]
+                 "www.samspaper.site"]
 
 
 # Application definition
@@ -156,4 +156,4 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 CSRF_TRUSTED_ORIGINS = ["https://*.herokuapp.com",
                         "https://whispering-headland-81352-d307253ad389.herokuapp.com/",
                         ".samspaper.site", "samspaper.herokuapp.com",
-                        "www.samspaper.site", "www.samspaper.info"]
+                        "www.samspaper.site"]
